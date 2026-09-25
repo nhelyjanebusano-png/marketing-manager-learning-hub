@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Marketing Manager Learning Hub — Job-Ready Track</title>
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--ink:#172033;--muted:#667085;--line:#e4e7ec;--accent:#4f46e5;--soft:#eef2ff;--green:#0f766e;--orange:#b45309}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+header{background:linear-gradient(135deg,#14152b,#4139a4);color:#fff;padding:42px 6vw}header h1{font-size:clamp(30px,5vw,50px);margin:0 0 8px}header p{max-width:900px;color:#e8e9ff;margin:0}
+nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--line);padding:9px 4vw;display:flex;gap:6px;overflow:auto}nav button{border:0;background:transparent;padding:9px 12px;border-radius:9px;white-space:nowrap;cursor:pointer}nav button.active{background:var(--soft);color:var(--accent);font-weight:700}
+main{max-width:1200px;margin:28px auto;padding:0 18px}.tab{display:none}.tab.active{display:block}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:15px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:19px;margin-bottom:16px}.muted,.small{color:var(--muted)}.small{font-size:13px}
+.progress{height:12px;background:#e9ecf2;border-radius:99px;overflow:hidden}.bar{height:100%;width:0;background:var(--accent)}
+.row{display:flex;justify-content:space-between;gap:12px;align-items:center}.pill{background:#ecfdf3;color:#166534;border-radius:999px;padding:4px 9px;font-size:12px;font-weight:700}
+.module{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px;margin:10px 0}.module.done{border-left:5px solid var(--green)}
+.check{display:flex;gap:9px;margin:9px 0}.check input{margin-top:5px}
+button.primary{background:var(--accent);color:#fff;border:0;border-radius:9px;padding:10px 14px;cursor:pointer;font-weight:700}
+input[type=text],textarea,select{width:100%;padding:9px;border:1px solid #d7dce5;border-radius:8px;font:inherit}textarea{min-height:120px}
+table{width:100%;border-collapse:collapse;background:#fff}th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:12px}
+.notice{background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:14px}.success{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:12px;padding:14px}
+.quiz{border:1px solid var(--line);border-radius:12px;padding:14px;margin:12px 0}.quiz label{display:block;padding:6px;border-radius:6px}.quiz label:hover{background:#f8fafc}
+.footer{color:var(--muted);font-size:13px;margin:35px 0}.score{font-size:28px;font-weight:800}
+.badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#f2f4f7;font-size:12px}.core{background:#ecfdf3;color:#166534}.bonus{background:#fff7ed;color:#9a3412}
+</style>
+</head>
+<body>
+<header>
+<h1>Marketing Manager Learning Hub</h1>
+<p><b>Job-ready track:</b> built around the Marketing Manager hiring post you found. The target is not just "social media skills"—it is the ability to own a content operation, keep a multi-channel cadence, write and QA marketing assets, use project-management tools, understand B2B content, and improve the system through workflows and automation.</p>
+</header>
+<nav>
+<button class="active" data-tab="dashboard">Dashboard</button>
+<button data-tab="job">Job Breakdown</button>
+<button data-tab="roadmap">16-Week Roadmap</button>
+<button data-tab="practice">Practice Lab</button>
+<button data-tab="quiz">Quizzes</button>
+<button data-tab="sim">Simulations</button>
+<button data-tab="workflow">Workflow Lab</button>
+<button data-tab="case">Case Study QA</button>
+<button data-tab="portfolio">Portfolio</button>
+</nav>
+<main>
+
+<section id="dashboard" class="tab active">
+<div class="grid">
+<div class="card"><h2>Overall study progress</h2><div class="row"><b id="pct">0%</b><span class="small" id="count">0 / 112 checkpoints</span></div><div class="progress"><div id="bar" class="bar"></div></div></div>
+<div class="card"><h2>Current focus</h2><p id="current"><b>01 — Marketing Manager Foundations</b></p><p class="small">Progress is saved in this browser automatically.</p></div>
+<div class="card"><h2>Manager mindset</h2><p>Do not ask only: <b>"What should I post?"</b></p><p>Ask: <b>"What business problem are we solving, for whom, through which channel, with what workflow and KPI?"</b></p></div>
+</div>
+<div class="card"><h2>What this hiring post tells us</h2><div class="grid">
+<div><b>Content Operations</b><p class="small">Backlog audit, publish-ready decisions, calendar ownership.</p></div>
+<div><b>Multi-channel</b><p class="small">LinkedIn + email + Instagram, with consistent cadence.</p></div>
+<div><b>Editorial</b><p class="small">Newsletter strategy and copywriting.</p></div>
+<div><b>Quality</b><p class="small">Case-study QA and creative-asset QA.</p></div>
+<div><b>Tools</b><p class="small">Asana + Google Docs/Sheets + email platform.</p></div>
+<div><b>B2B</b><p class="small">Agency/SaaS/professional-services content thinking.</p></div>
+</div></div>
+<div class="notice"><b>Important:</b> You do not need to master everything at once. The learning order below deliberately starts with content operations and strategy, then adds channel execution, analytics, project management and automation.</div>
+</section>
+
+<section id="job" class="tab">
+<div class="card"><h2>Hiring Post: Spelling, Thought & Process Check</h2>
+<p>The post itself is clear and internally consistent. The wording communicates a <b>hands-on marketing operator/manager</b>, not someone who only creates posts. The strongest signals are backlog ownership, multi-channel cadence, newsletter ownership, QA, project management and B2B experience.</p>
+<p><b>One wording point to understand:</b> "QA case studies and creative assets" means quality assurance—not writing case studies only. You should be able to inspect content before it goes live and catch factual, editorial, visual, link and brand issues.</p>
+<p><b>"Own newsletter strategy, copywriting, and send cadence"</b> signals end-to-end ownership: decide the purpose and editorial direction, write/edit, build the campaign, QA it, schedule/send it, then read the results.</p>
+<p><b>"Build marketing from scratch"</b> signals systems thinking: templates, SOPs, calendar, roles, approvals, metrics, tools and recurring routines—not simply more content.</p>
+</div>
+<div class="card"><h2>Requirement → Learning Target</h2><div class="table-wrap"><table><thead><tr><th>Hiring requirement</th><th>Priority</th><th>What you must learn</th><th>Proof to build</th></tr></thead><tbody id="jobRows"></tbody></table></div></div>
+<div class="card"><h2>Gap-to-Confidence Framework</h2><ol>
+<li><b>Understand:</b> learn the concept and vocabulary.</li>
+<li><b>Observe:</b> analyze how a real brand uses it.</li>
+<li><b>Build:</b> create the asset/system yourself.</li>
+<li><b>Operate:</b> run it for a week or simulated cycle.</li>
+<li><b>Measure:</b> inspect KPI/output.</li>
+<li><b>Explain:</b> present your reasoning as if reporting to a COO.</li>
+</ol></div>
+</section>
+
+<section id="roadmap" class="tab"><div class="card"><h2>16-Week Job-Ready Roadmap</h2><p class="muted">Recommended: 5 sessions/week, 60–90 minutes. Every week produces an artifact. Checkpoints are intentionally practical.</p><div id="modules"></div></div></section>
+
+<section id="practice" class="tab">
+<div class="card"><h2>Practice Platforms</h2><div class="grid">
+<div class="card"><h3>LinkedIn</h3><p>B2B thought leadership, agency/SaaS practice, case studies, founder/company content.</p></div>
+<div class="card"><h3>Instagram</h3><p>Creative repurposing, carousels, Reels, visual QA and community management.</p></div>
+<div class="card"><h3>Email</h3><p>Newsletter strategy, copywriting, segmentation, campaign QA and send cadence.</p></div>
+<div class="card"><h3>YouTube/TikTok</h3><p>Use for trend research and short-form thinking, even though they are not the target job's primary channels.</p></div>
+</div></div>
+<div class="card"><h2>Trend-to-Content Exercise</h2><p class="small">For each trend, prove relevance before using it.</p><div class="table-wrap"><table><thead><tr><th>Trend</th><th>Platform</th><th>Audience</th><th>Why it matters</th><th>Brand angle</th><th>Decision</th></tr></thead><tbody id="trendRows"></tbody></table></div><button class="primary" onclick="addTrend()">+ Add trend</button></div>
+</section>
+
+<section id="quiz" class="tab"><div class="card"><h2>Knowledge Checks</h2><p class="muted">Retake after reviewing mistakes. Your score is saved.</p><div id="quizBox"></div><button class="primary" onclick="grade()">Grade quizzes</button><div id="quizResult"></div></div></section>
+
+<section id="sim" class="tab"><div class="card"><h2>Manager Simulations</h2><p class="muted">Answer as if you already have the job. Include the problem, evidence, decision, owner, timeline, QA and KPI.</p><div id="simBox"></div></div></section>
+
+<section id="workflow" class="tab">
+<div class="card"><h2>Workflow Builder</h2><p class="muted"><b>Trigger → Conditions → Actions → Human QA → Exception → Measurement</b></p>
+<div class="grid">
+<div><label>Workflow name<input id="wName" type="text" placeholder="Content request intake"></label></div>
+<div><label>Trigger<input id="wTrigger" type="text" placeholder="Form submitted"></label></div>
+<div><label>Condition<input id="wCondition" type="text" placeholder="Required fields complete"></label></div>
+<div><label>Action<input id="wAction" type="text" placeholder="Create Asana task + assign owner"></label></div>
+<div><label>Human QA<input id="wQA" type="text" placeholder="Manager checks brief before production"></label></div>
+<div><label>Exception<input id="wException" type="text" placeholder="Missing data → manual queue"></label></div>
+<div><label>Measurement<input id="wMetric" type="text" placeholder="On-time publish rate"></label></div>
+</div><br><button class="primary" onclick="saveWorkflow()">Save workflow</button><div id="workflowList"></div></div>
+<div class="card"><h2>Backlog Recovery SOP</h2><ol><li>Inventory every asset.</li><li>Define "publish-ready".</li><li>Tag by channel, campaign, pillar, format, owner and status.</li><li>Score business impact, urgency and effort.</li><li>Decide: publish, refresh, repurpose, park or archive.</li><li>Build a realistic cadence.</li><li>Assign owners and deadlines.</li><li>Add QA/approval gates.</li><li>Measure backlog age and on-time publishing weekly.</li></ol></div>
+</section>
+
+<section id="case" class="tab"><div class="card"><h2>Case Study QA Method</h2><p>When reading a case study, do not treat every sentence as equally proven.</p><ol><li><b>Context:</b> company, audience, market and timeframe.</li><li><b>Problem:</b> measurable business/marketing problem.</li><li><b>Baseline:</b> what was happening before.</li><li><b>Intervention:</b> what changed.</li><li><b>Evidence:</b> metrics, methodology, sample and timeframe.</li><li><b>Alternative explanations:</b> seasonality, budget, audience changes, product changes, tracking changes.</li><li><b>Transferability:</b> what principle can be reused without copying blindly.</li></ol>
+<textarea id="caseNotes" placeholder="Analyze a marketing case study here..."></textarea><br><button class="primary" onclick="saveCase()">Save analysis</button> <span id="saved" class="small"></span></div></section>
+
+<section id="portfolio" class="tab"><div class="card"><h2>Portfolio Proof</h2><p class="muted">Your portfolio should make the hiring manager think: "This person can take ownership."</p><div id="portfolioBox"></div><h3>Target portfolio artifacts</h3><ul id="portfolioList"></ul></div></section>
+
+<div class="footer">This learning hub is a self-study tool. Progress is stored with browser localStorage. The file is publish-ready as a static HTML page; upload it to GitHub Pages, Netlify, Cloudflare Pages or another static hosting service to create a shareable public URL.</div>
+</main>
+<script>
+const M=[["01", "Marketing Manager Foundations", "Strategy, positioning, audience, funnels, KPIs, briefs"], ["02", "B2B Customer & Market Research", "ICP, buyer journey, pain points, JTBD, competitor research"], ["03", "B2B Content Strategy", "Content pillars, thought leadership, case studies, content-to-funnel mapping"], ["04", "Multi-Channel Content Management", "LinkedIn, Instagram, email/newsletter, repurposing and cadence"], ["05", "Copywriting & Newsletter Strategy", "Hooks, subject lines, CTAs, newsletters, editing and brand voice"], ["06", "Content Backlog Audit & Recovery", "Audit, publish-ready criteria, prioritization, refresh, archive, scheduling"], ["07", "Creative QA & Case Study QA", "Proofreading, brand QA, factual QA, links, visuals, case-study review"], ["08", "Marketing Analytics & Reporting", "KPIs, GA4 concepts, UTM, conversion rates, campaign reporting"], ["09", "Trend Research & Content Opportunities", "Trend spotting, validation, B2B relevance, social listening"], ["10", "Asana Project Management", "Projects, tasks, owners, dependencies, deadlines, recurring workflows"], ["11", "Google Docs & Sheets Operations", "Content databases, calendars, reporting sheets, collaboration"], ["12", "Email Marketing Operations", "Campaign builds, lists, segmentation, QA, scheduling and measurement"], ["13", "Automation & Workflow Design", "Trigger, conditions, actions, approvals, exceptions and documentation"], ["14", "Startup Marketing Management", "Build-from-scratch systems, prioritization, lean experiments, resource allocation"], ["15", "Leadership & Stakeholder Management", "Briefing designers, delegation, approvals, reporting and decision-making"], ["16", "Capstone: Run the Hiring Post Role", "Simulate the exact job for 30 days and produce a portfolio"]];
+const J=[["Content backlog audit", "Core", "Learn to inventory assets, define 'publish-ready', score priority, refresh/archive, and create a recovery calendar.", "Backlog audit + triage spreadsheet + SOP"], ["LinkedIn publishing cadence", "Core", "B2B editorial strategy, thought leadership, case studies, founder/company content, scheduling and analytics.", "30-day LinkedIn calendar + 10 post briefs"], ["Email publishing", "Core", "Newsletter strategy, copywriting, segmentation, campaign build, QA, scheduling and reporting.", "4-email newsletter sequence + QA checklist"], ["Instagram publishing", "Core", "Repurpose B2B ideas into visual/social formats; maintain cadence without creating unnecessary volume.", "30-day Instagram plan + 8 creative briefs"], ["Newsletter strategy & copywriting", "Core", "Audience promise, editorial angle, subject lines, structure, CTA, testing and performance review.", "Newsletter strategy one-pager"], ["Case study QA", "Core", "Check narrative logic, claims, numbers, client names, links, formatting, evidence and consistency.", "Case-study QA checklist + marked-up sample"], ["Creative asset QA", "Core", "Review copy, spelling, brand consistency, dimensions, CTA, accessibility, links and version control.", "Creative QA checklist"], ["Asana", "Core", "Turn strategy into assigned work: projects, tasks, owners, due dates, dependencies, recurring tasks and status.", "Asana-style workflow map + sample project"], ["Google Docs/Sheets", "Core", "Use Docs for briefs/SOPs and Sheets for content inventory, calendars, QA and KPI tracking.", "Content operating spreadsheet"], ["B2B content marketing experience", "Core/Experience", "Build a practice portfolio that demonstrates the work even before formal B2B employment.", "B2B sample portfolio"], ["Webflow experience", "Bonus", "Understand CMS/content publishing basics and how marketing content connects to a website.", "Optional Webflow practice project"], ["Build a marketing function from scratch", "Bonus/Strategic", "Learn operating cadence, documentation, templates, ownership, KPIs and continuous improvement.", "Marketing operating system"]];
+const Q=[["Strategy", [["A content backlog contains 60 assets. What should you do first?", ["Publish everything quickly", "Inventory and classify assets before prioritizing", "Delete half", "Ask the designer to remake everything"], 1], ["For B2B content, a useful starting point is:", ["Only viral trends", "Audience/business problem + buyer stage + desired action", "Follower count", "Posting frequency alone"], 1], ["A content calendar should connect content to:", ["Only dates", "Business objective, audience, funnel stage, format and owner", "Only hashtags", "Only design"], 1]]], ["QA", [["Which is a content QA check?", ["Claim accuracy and links", "Only font color", "Only follower count", "Only posting time"], 0], ["A case study says conversion increased 80%. What should QA verify?", ["Whether the number has context, timeframe and source/evidence", "Only whether 80 is a large number", "Only the headline", "Nothing if the client approved it"], 0], ["A creative asset has a typo one hour before publishing. The manager should:", ["Ignore it", "Use the defined QA/approval process and correct before publishing", "Publish and edit later without record", "Blame the designer"], 1]]], ["Automation", [["The trigger in a workflow is:", ["The event that starts the workflow", "The final KPI", "A design asset", "A meeting"], 0], ["A good first automation for a small marketing team is:", ["Automate every creative decision", "Automate repetitive routing/notifications while keeping human QA where judgment is needed", "Auto-publish every trend", "Remove all approvals"], 1], ["A robust workflow includes:", ["Trigger, actions, owner, exceptions and measurement", "Only a trigger", "Only an automation tool", "No documentation"], 0]]]];
+const S=[["Simulation A \u2014 60-Asset Backlog", "You inherit 60 unfinished LinkedIn, email and Instagram assets. A launch is 3 weeks away.", ["Create inventory", "Define publish-ready criteria", "Score impact/urgency/effort", "Separate refresh/repurpose/new/kill", "Build 3-week calendar", "Assign owners in Asana", "Add QA and approval checkpoints"]], ["Simulation B \u2014 Newsletter Owner", "The company newsletter has inconsistent cadence and weak clicks.", ["Define audience promise", "Audit past issues", "Choose editorial pillars", "Create cadence", "Write sample issue", "Add CTA", "Define KPIs and testing plan"]], ["Simulation C \u2014 Case Study QA", "A designer sends a polished case study with several performance claims.", ["Check numbers and timeframes", "Verify source/evidence", "Check narrative logic", "Check client/product names", "Check links", "Check grammar/style", "Approve or return with specific fixes"]], ["Simulation D \u2014 Marketing Workflow", "A content request arrives through a form and currently gets lost in chat.", ["Form trigger", "Create task", "Assign owner", "Set due date", "Route for copy/creative", "QA gate", "Approval", "Schedule/publish", "Log result"]], ["Simulation E \u2014 B2B Content Week", "The agency needs LinkedIn, email and Instagram content from one customer insight.", ["Turn insight into one LinkedIn post", "Turn it into newsletter section", "Create visual/IG adaptation", "Create CTA", "Schedule cross-channel cadence", "Measure and repurpose the winner"]]];
+const P=["Content backlog audit with publish-ready criteria", "30-day multi-channel calendar: LinkedIn + email + Instagram", "Newsletter strategy + 4 sample issues", "10 LinkedIn posts with creative briefs", "8 Instagram creative briefs", "Case-study QA checklist + reviewed case study", "Creative asset QA checklist", "Asana-style content production workflow", "Google Sheets content inventory + KPI dashboard", "3 automation workflow diagrams", "Trend report with B2B relevance analysis", "30-day startup marketing operating plan", "Final capstone report with results, lessons and next actions"];
+function state(){try{return JSON.parse(localStorage.getItem("mmHub")||"{}")}catch(e){return {}}}
+function save(s){localStorage.setItem("mmHub",JSON.stringify(s));render()}
+function esc(v){return String(v??"").replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
+function toggle(i,j,c){let s=state();s.mods=s.mods||{};s.mods[i+"-"+j]=c;save(s)}
+function render(){
+ const s=state(), total=M.length*7, done=Object.values(s.mods||{}).filter(Boolean).length, pct=Math.round(done/total*100);
+ document.getElementById("pct").textContent=pct+"%";document.getElementById("count").textContent=done+" / "+total+" checkpoints";document.getElementById("bar").style.width=pct+"%";
+ let cur=M.findIndex((m,i)=>!Array.from({length:7},(_,j)=>s.mods?.[i+"-"+j]).every(Boolean));
+ document.getElementById("current").innerHTML=cur<0?"<b>All modules complete — start your capstone.</b>":"<b>"+M[cur][0]+" — "+M[cur][1]+"</b>";
+ document.getElementById("jobRows").innerHTML=J.map(x=>"<tr><td><b>"+esc(x[0])+"</b></td><td><span class='badge "+(x[1].includes("Core")?"core":"bonus")+"'>"+esc(x[1])+"</span></td><td>"+esc(x[2])+"</td><td>"+esc(x[3])+"</td></tr>").join("");
+ const actions=["Learn core concepts","Study one real B2B example","Create a one-page note","Build the weekly artifact","Apply it to a practice brand","Review/measure/QA the output","Write a manager reflection"];
+ document.getElementById("modules").innerHTML=M.map((m,i)=>{
+  const n=actions.filter((_,j)=>s.mods?.[i+"-"+j]).length;
+  return "<div class='module "+(n===7?"done":"")+"'><div class='row'><div><h3>"+m[0]+" — "+m[1]+"</h3><div class='small'>"+m[2]+"</div></div><span class='pill'>"+n+"/7</span></div>"+actions.map((a,j)=>"<label class='check'><input type='checkbox' "+(s.mods?.[i+"-"+j]?"checked":"")+" onchange='toggle("+i+","+j+",this.checked)'>"+a+"</label>").join("")+"</div>"
+ }).join("");
+ const trends=s.trends||[];document.getElementById("trendRows").innerHTML=trends.map((r,i)=>r.map((v,j)=>"<td><input value='"+esc(v)+"' onchange='editTrend("+i+","+j+",this.value)'></td>").join("")).map(x=>"<tr>"+x+"</tr>").join("");
+ document.getElementById("workflowList").innerHTML=(s.workflows||[]).map(w=>"<div class='module'><b>"+esc(w.name)+"</b><p class='small'>"+esc(w.trigger)+" → "+esc(w.action)+" | QA: "+esc(w.qa)+" | Measure: "+esc(w.metric)+"</p></div>").join("");
+ document.getElementById("portfolioBox").innerHTML=P.map((x,i)=>"<label class='check'><input type='checkbox' "+(s.portfolio?.[i]?"checked":"")+" onchange='togglePortfolio("+i+",this.checked)'>"+esc(x)+"</label>").join("");
+ document.getElementById("portfolioList").innerHTML=P.map(x=>"<li>"+esc(x)+"</li>").join("");
+ document.getElementById("caseNotes").value=s.caseNotes||"";
+}
+function addTrend(){let s=state();s.trends=s.trends||[];s.trends.push(["","","","","","Observe"]);save(s)}
+function editTrend(i,j,v){let s=state();s.trends[i][j]=v;localStorage.setItem("mmHub",JSON.stringify(s))}
+function togglePortfolio(i,c){let s=state();s.portfolio=s.portfolio||{};s.portfolio[i]=c;save(s)}
+function saveWorkflow(){let s=state();s.workflows=s.workflows||[];s.workflows.push({name:wName.value,trigger:wTrigger.value,condition:wCondition.value,action:wAction.value,qa:wQA.value,exception:wException.value,metric:wMetric.value});["wName","wTrigger","wCondition","wAction","wQA","wException","wMetric"].forEach(id=>document.getElementById(id).value="");save(s)}
+function saveCase(){let s=state();s.caseNotes=document.getElementById("caseNotes").value;localStorage.setItem("mmHub",JSON.stringify(s));document.getElementById("saved").textContent=" Saved locally."}
+function grade(){let correct=document.querySelectorAll("input[data-correct='1']:checked").length;let total=document.querySelectorAll("input[data-correct='1']").length;let s=state();s.quizScore=correct+"/"+total;localStorage.setItem("mmHub",JSON.stringify(s));document.getElementById("quizResult").innerHTML="<div class='success'><span class='score'>"+correct+"/"+total+"</span><br>Review every missed question before moving on.</div>"}
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{document.querySelectorAll("nav button").forEach(x=>x.classList.remove("active"));b.classList.add("active");document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));document.getElementById(b.dataset.tab).classList.add("active")});
+document.getElementById("quizBox").innerHTML=Q.map(q=>"<h3>"+esc(q[0])+"</h3>"+q[1].map((it,i)=>"<div class='quiz'><b>"+(i+1)+". "+esc(it[0])+"</b>"+it[1].map((a,k)=>"<label><input type='radio' name='q"+q[0]+i+"' data-correct='"+(k===it[2]?"1":"0")+"'> "+esc(a)+"</label>").join("")+"</div>").join("")).join("");
+document.getElementById("simBox").innerHTML=S.map(x=>"<div class='card'><h3>"+esc(x[0])+"</h3><p>"+esc(x[1])+"</p><b>Strong manager response should include:</b><ul>"+x[2].map(y=>"<li>"+esc(y)+"</li>").join("")+"</ul><textarea placeholder='Your decision, reasoning, owner, timeline and KPI...'></textarea></div>").join("");
+render();
+</script>
+</body></html>
